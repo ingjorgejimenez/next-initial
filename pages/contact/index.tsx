@@ -1,9 +1,9 @@
 import { MainLayout } from '@/components/layouts/MainLayout'
 
-export default function HomePage() {
+export default function ContactPage() {
   return (
     <MainLayout>
-      <h1 className='title'>Mi pagina Next-JS Home</h1>
+      <h1 className='title'>Mi pagina de Contact</h1>
       <div className='description'>
         <p>
           Get started by editing&nbsp;

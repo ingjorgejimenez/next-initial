@@ -1,9 +1,10 @@
 import { MainLayout } from '@/components/layouts/MainLayout'
+import { ReactElement } from 'react'
 
-export default function HomePage() {
+export default function index() {
   return (
-    <MainLayout>
-      <h1 className='title'>Mi pagina Next-JS Home</h1>
+    <>
+      <h1 className='title'>Mi pagina de pricing</h1>
       <div className='description'>
         <p>
           Get started by editing&nbsp;
@@ -11,6 +12,10 @@ export default function HomePage() {
           <span>Jorge Jimenez Software Developer </span>
         </p>
       </div>
-    </MainLayout>
+    </>
   )
+}
+
+index.getLayout = function getLayout(page: ReactElement) {
+  return <MainLayout>{page}</MainLayout>
 }
